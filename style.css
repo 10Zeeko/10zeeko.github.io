@@ -1,0 +1,96 @@
+
+html, body {
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #f5f5f5;
+    margin: 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    font-family: 'Segoe UI Variable Text';
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: #1a1a1a;
+        color: #fff;
+        /* Add the background image, warped to the page and no repeat */
+        background-image: url("assets/images/black_background.jpg");
+    }
+    button{
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+    button:hover{
+        background-color: rgba(100, 100, 100, 0.4);
+        color: #fff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-wrapper {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Segoe UI Variable Text';
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-button{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.nav-profile{
+    /* Display all in a row */
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-name{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+#name{
+    font-family: 'Segoe UI Variable Display';
+    font-size: 1.5em;
+}
+#email{
+    font-family: 'Segoe UI Variable Small';
+    font-size: 0.8em;
+}
