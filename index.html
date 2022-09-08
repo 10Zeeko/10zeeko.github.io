@@ -6,6 +6,7 @@
         <title>10Zeeko</title>
         <link rel="icon" href="assets/images/favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <header>
@@ -19,16 +20,16 @@
                         </div>
                     </div>
                     <div class="nav-button-wrapper">
-                        <button class="nav-button">
+                        <button class="nav-button" onclick="changeInfo(0)">
                             🏠 Home
                         </button>
-                        <button class="nav-button">
+                        <button class="nav-button" onclick="changeInfo(1)">
                             🎮 Videogames
                         </button>
-                        <button class="nav-button">
+                        <button class="nav-button" onclick="changeInfo(2)">
                             🖥️ Projects
                         </button>
-                        <button class="nav-button">
+                        <button class="nav-button" onclick="changeInfo(3)">
                             💾 About Me
                         </button>
                     </div>
@@ -36,7 +37,7 @@
             </nav>
         </header>
         <main>
-            <object type="text/html" data="content/home.html">
+            <object type="text/html" data="content/home.html" id="main-content" class="main_content fadeIn">
         </main>
     </body>
 </html>
