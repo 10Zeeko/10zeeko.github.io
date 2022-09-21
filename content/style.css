@@ -10,6 +10,7 @@ body {
     }
     button{
         color: #fff;
+        background-color: rgba(202, 202, 202, 0.08);
     }
     button:hover{
         color: #fff;
@@ -22,6 +23,7 @@ body {
     }
     button{
         color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.911);
     }
     button:hover{
         color: rgb(0, 0, 0);
@@ -44,6 +46,11 @@ main{
     width: 100%;
 }
 
+a{
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+}
+
 #positive{
     font-size:xx-large;
     color: rgb(29, 155, 240);
@@ -51,8 +58,6 @@ main{
 }
 
 button{
-    color: #fff;
-    background-color: rgba(202, 202, 202, 0.08);
     border: none;
     border-radius: 4px;
     padding: 10px;
@@ -61,6 +66,7 @@ button{
     text-align: left;
     width: 80%;
     transition: all 0.2s ease-in-out;
+    margin: 5px;
 }
 
 button:hover{
@@ -81,4 +87,8 @@ button:hover{
     float: right;
     position: relative;
     top: 50%;
+}
+
+.win{
+    text-align: center;
 }

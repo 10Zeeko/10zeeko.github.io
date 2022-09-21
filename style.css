@@ -13,7 +13,6 @@ body {
     background-size: cover;
     backdrop-filter: blur(30px);
     border-radius: 8px;
-    border: 1px solid rgb(75, 75, 75);
     font-family: 'Segoe UI Variable Text';
     display: flex;
     flex-direction: row;
@@ -26,6 +25,7 @@ body {
         color: #fff;
         /* Add the background image, warped to the page and no repeat */
         background-image: url("assets/images/black_background.jpg");
+        border: 1px solid rgb(75, 75, 75);
     }
     button{
         background-color: rgba(0, 0, 0, 0);
@@ -35,14 +35,18 @@ body {
         background-color: rgba(100, 100, 100, 0.4);
         color: #fff;
     }
+    #twitter{
+        filter: brightness(0%) invert(100%);
+    }
 }
 
 @media (prefers-color-scheme: light) {
     body{
-        background-color: #1a1a1a;
+        background-color: #dddddd;
         color: rgb(0, 0, 0);
         /* Add the background image, warped to the page and no repeat */
         background-image: url("assets/images/white_background.jpg");
+        border: 1px solid rgb(187, 187, 187);
     }
     button{
         background-color: rgba(255, 255, 255, 0);
@@ -51,6 +55,9 @@ body {
     button:hover{
         background-color: rgba(100, 100, 100, 0.4);
         color: rgb(0, 0, 0);
+    }
+    #twitter{
+        filter: grayscale(100%) brightness(90%);
     }
 }
 
@@ -161,4 +168,11 @@ object{
     animation-delay: 0.5s;
     animation-duration: 1s;
     animation-fill-mode: forwards; 
+}
+
+#twitter{
+    height: 15%;
+    width: 15%;
+    margin: auto auto 0 5%;
+    bottom: 0;
 }
