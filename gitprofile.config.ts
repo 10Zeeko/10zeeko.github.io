@@ -158,6 +158,7 @@ const CONFIG = {
     themes: [
       'winter',
       'dark',
+      'coffee',
     ],
 
     // Custom theme, applied to `procyon` theme
